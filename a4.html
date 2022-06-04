@@ -1,0 +1,534 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<!-- Basic Page Needs -->
+  <meta charset="utf-8">
+  <title>Art 103 | Assignment 4</title>
+  <meta name="description" content="">
+  <meta name="author" content="Winnie Liang">
+
+<!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- CSS & JS -->
+  <script type="text/javascript"  src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/f08ff918ca.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="css/overlaypopup.js"></script>
+  <script type="text/javascript" src="css/topbutton.js"></script>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/overlaypopup.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+<!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+<!-- Start of page -->
+
+</head>
+<body>
+
+<!-- Top Navigation -->
+<nav class="navbar">
+  <div class="container nav_pad">
+    <ul>
+      <li><a class="navbar-link" href="index.html"><b>Main</b></a></li>
+      |
+      <li><a class="navbar-link" href="a1.html"> Oblique Strategies </a></li>
+      |
+      <li><a class="navbar-link" href="a2.html"> Fusion E1 (Stamp) </a></li>
+      |
+      <li><a class="navbar-link" href="a3.html"> Reading 1 </a></li>
+      |
+      <li><a class="navbar-link" href="a4.html"> Tessel Mod </a></li>
+      |
+      <li><a class="navbar-link" href="a5.html"> Reading 2 </a></li>
+      |
+      <li><a class="navbar-link" href="a6.html"> Signs </a></li>
+      |
+      <li><a class="navbar-link" href="a7.html"> Fusion E2 (Teapot) </a></li>
+      |
+      <li><a class="navbar-link" href="a8.html"> Reading 3 </a></li>
+      |
+      <li><a class="navbar-link" href="a9.html"> Artifacts </a></li>
+      |
+    </ul>
+  </div>
+</nav>
+
+<!-- Primary Page Layout -->
+  <div class="container">
+
+    <button onclick="topFunction()" id="topBtn" title="Go to top">
+      <span style="font-size: 20px; color:#ffb3d5;">
+        <i class="fa-solid fa-arrow-up"></i>
+      </span>
+    </button>
+
+<!-- Header and Quote -->
+    <div class="row section" style="padding-bottom:0px;">
+      <header id="header" class="twelve columns">
+
+        <h3>Assignment 4: Tesselations and Modularity</h3>
+
+        <div class="statement_text">
+          <em><p2>
+            When inspiration does not come to me, I go halfway to meet it.
+            -- Yoko Ono
+          </p2></em>
+          <br>
+        </div>
+        <hr class="thick"></hr>
+      </header>
+    </div>
+
+    <div class="row section" style="border-radius:10px; padding-top:15px; padding-bottom:15px; padding-left:15px; background: rgb(255,195,222);
+    background: linear-gradient(0deg, rgba(255,195,222,0.5) 26%, rgba(255,195,222,0.5) 67%);">
+    <h5>TABLE OF CONTENTS</h5>
+
+      <h6><a href="#phase1">Phase One: Intro, Background and 4 Tesselation and Module Exercises</a></h6>
+      <ul style="line-height:75%;">
+        <li><h7><a href="#phase1part1">Part 1: Simple Modular Origami</a></h7></li>
+        <li><h7><a href="#phase1part2">Part 2: Tessellations and Modularity</a></h7></li>
+        <li><h7><a href="#phase1part3">Part 3: Modular Group Origami</a></h7></li>
+        <li><h7><a href="#phase1part4">Part 4: 3D Fastener Brainstorming Designs, Mockups, and Approaches</a></h7></li>
+      </ul>
+      <br>
+      <h6><a href="#phase2">Phase Two: Digital Fastner Designs and Goldilocks Tests</a></h6>
+      <ul style="line-height:75%;">
+        <li><h7><a href="#phase2part1">Part 1: First Designs with Adobe Illustrator</a></h7></li>
+        <li><h7><a href="#phase2part2">Part 2: Digital Fastner Designs and Goldilocks tests</a></h7></li>
+      </ul>
+      <br>
+      <h6><a href="#phase3">Phase Three: Rough Draft Schema and Final Design</a></h6>
+      <ul style="line-height:75%;">
+        <li><h7><a href="#phase3schema">First Rough Schema</a></h7></li>
+      </ul>
+      <br>
+      <h6><a href="#phase4">Phase Four: First Design Review</a></h6>
+      <ul style="line-height:75%;">
+        <li><h7><a href="#phase4design">Initial Final Designs</a></h7></li>
+        <li><h7><a href="#phase4model">Paper Model</a></h7></li>
+      </ul>
+      <br>
+      <h6><a href="#phase5">Phase Five: Documentation Details for the Project and Group Review</a></h6>
+      <ul style="line-height:75%;">
+        <li><h7><a href="#phase5wood">Wood Designs (Audrey Dayrit, Winnie Liang)</a></h7></li>
+        <li><h7><a href="#phase5cardstock">Cardstock Designs (Deanna Gutierrez, Gabriela Vargas)</a></h7></li>
+      </ul>
+      <br>
+      <h6><a href="#phase6">Phase Six: Laser Cutting Documentation</a></h6>
+      <ul style="line-height:75%;">
+        <li><h7><a href="#phase6wood">Wood Design Cuts (Audrey Dayrit, Winnie Liang)</a></h7></li>
+        <li><h7><a href="#phase6cardstock">Cardstock Design Cuts (Deanna Gutierrez, Gabriela Vargas)</a></h7></li>
+      </ul>
+      <br>
+      <h6><a href="#phase7">Phase Seven: Presentation and Schema Review</a></h6>
+      <h6><a href="#phase8">Phase Eight: Final Schema</a></h6>
+      <h6><a href="#phase9">Phase Nine: Final Presentation</a></h6>
+      <ul style="line-height:75%;">
+        <li><h7><a href="a4final.html">Final Project Page</a></h7></li>
+      </ul>
+
+    </div>
+
+    <hr class="thick">
+
+<!-- Body Container -->
+<div class="container" style="margin:0px;pointer-events:none;width:100%;">
+
+<!-- Phase 1 -->
+    <div class="row section" style="padding-bottom:0px;">
+
+      <!-- Phase 1 Header -->
+      <div class="twelve columns">
+        <a id="phase1"><h5>Phase One: Intro, Background and 4 Tesselation and Module Exercises</h5></a>
+      </div>
+
+<!-- Phase 1, Part 1 -->
+      <div class="twelve columns">
+        <a id="phase1part1"><h6>Part 1: Simple Modular Origami</h6></a>
+      </div>
+
+      <div class="row section">
+
+        <div class="six columns">
+          <a href="images/ass4_phase1/part1/origami.jpg"><img src="images/ass4_phase1/part1/origami.jpg" class="u-full-width"/></a>
+        </div>
+
+        <div class="six columns">
+          <a href="images/ass4_phase1/part1/origami-deconstruct.jpg"><img src="images/ass4_phase1/part1/origami-deconstruct.jpg" class="u-full-width"/></a>
+        </div>
+
+      </div>
+    </div>
+
+<!-- Phase 1, Part 2 -->
+    <div class="row section">
+      <div class="twelve columns">
+        <a id="phase1part2"><h6>Part 2: Tessellations and Modularity</h6></a>
+
+        <div class="row section" style="padding-bottom:0px;">
+
+          <div class="six columns">
+            <a href="images/ass4_phase1/part2/tessel.jpg"><img src="images/ass4_phase1/part2/tessel.jpg" class="u-full-width"/></a>
+          </div>
+
+          <div class="six columns">
+            <a href="images/ass4_phase1/part2/group-tessel.png"><img src="images/ass4_phase1/part2/group-tessel.png" class="u-full-width"/></a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+<!-- Phase 1, Part 3 -->
+    <div class="row section">
+      <div class="twelve columns">
+        <a id="phase1part3"><h6>Part 3: Modular Group Origami</h6></a>
+
+        <div class="row section" style="padding-bottom:0px;">
+
+          <div class="six columns">
+            <a href="images/ass4_phase1/part3/snake-short.jpg"><img src="images/ass4_phase1/part3/snake-short.jpg" class="u-full-width"/></a>
+          </div>
+
+          <div class="six columns">
+            <a href="images/ass4_phase1/part3/snake-long.jpg"><img src="images/ass4_phase1/part3/snake-long.jpg" class="u-full-width"/></a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+<!-- Phase 1, Part 4 -->
+    <div class="row section">
+      <div class="twelve columns">
+        <a id="phase1part4"><h6>Part 4: 3D Fastener Brainstorming Designs, Mockups, and Approaches</h6></a>
+
+        <div class="row section" style="padding-bottom:0px;">
+
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+<!-- Divider -->
+    <hr class="dash">
+
+<!-- Phase Two -->
+
+    <div class="row section">
+
+      <!-- Phase Two Header -->
+      <div class="twelve columns">
+        <a id="phase2"><h5>Phase Two: Digital Fastner Designs and Goldilocks Tests</h5></a>
+      </div>
+
+
+<!-- Phase 2, Part 1 -->
+      <div class="row section">
+        <div class="twelve columns">
+          <a id="phase2part1"><h6>Part 1: First Designs with Adobe Illustrator</h6></a>
+
+          <div class="row section" style="padding-bottom:0px;">
+
+            <div class="twelve columns">
+              <a href="images/ass4_phase2/part1/group.png"><img src="images/ass4_phase2/part1/group.png" class="u-full-width"/></a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+<!-- Phase 2, Part 2 -->
+      <div class="row section">
+        <div class="twelve columns">
+          <a id="phase2part2"><h6>Part 2: Digital Fastner Designs and Goldilocks tests</h6></a>
+
+          <div class="row section" style="padding-bottom:0px;">
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+
+<!-- Divider -->
+      <hr class="dash">
+
+<!-- Phase 3 -->
+
+    <div class="row section">
+
+      <!-- Phase 3 Header -->
+      <div class="twelve columns">
+        <a id="phase3"><h5>Phase Three: Rough Draft Schema and Final Design</h5></a>
+      </div>
+
+<!-- Phase 3 Body-->
+      <div class="row section">
+        <div class="twelve columns">
+            <a id="phase3schema"><h6>First Rough Schema</h6></a>
+
+            <div class="row section" style="padding-bottom:0px;">
+
+                <div class="twelve columns">
+                  <a href="images/ass4_phase3/rough_schema.png"><img src="images/ass4_phase3/rough_schema.png" class="u-full-width"/></a>
+                </div>
+
+            </div>
+        </div>
+      </div>
+
+    </div>
+
+<!-- Divider -->
+    <hr class="dash">
+
+<!-- Phase 4 -->
+
+    <div class="row section">
+
+      <!-- Phase 4 Header -->
+      <div class="twelve columns">
+        <a id="phase4"><h5>Phase Four: First Design Review</h5></a>
+      </div>
+
+
+<!-- Phase 4, Initial Design -->
+
+    <div class="row section">
+      <div class="twelve columns">
+        <a id="phase4design"><h6>Initial Final Designs</h6></a>
+      </div>
+
+      <div class="row section">
+        <div class="six columns">
+          <h7>1/8" Plywood</h7>
+          <a href="images\ass4_phase4\first_design_wood.png"><img src="images\ass4_phase4\first_design_wood.png" class="u-full-width"/></a>
+        </div>
+
+        <div class="six columns">
+          <h7>Plike</h7>
+          <a href="images\ass4_phase4\first_design_leaves.png"><img src="images\ass4_phase4\first_design_leaves.png" class="u-full-width"/></a>
+        </div>
+      </div>
+    </div>
+
+<!-- Phase 4, Model -->
+    <div class="row section">
+      <div class="twelve columns">
+        <a id="phase4model"><h6>Paper Model</h6></a>
+      </div>
+
+      <div class="row section">
+        <div class="twelve columns">
+          <a href="images/ass4_phase4/paper_model.jpg"><img src="images/ass4_phase4/paper_model.jpg" class="u-full-width"/></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Divider -->
+    <hr class="dash">
+
+<!-- Phase 5 -->
+
+    <div class="row section">
+
+      <!-- Phase 5 Header -->
+      <div class="twelve columns">
+        <a id="phase5"><h5>Phase Five: Documentation Details for the Project and Group Review</h5></a>
+      </div>
+
+<!-- Phase 5, Group Documentation -->
+
+<!-- Phase 5, Wood Cuts -->
+      <div class="row section">
+        <div class="twelve columns">
+          <a id="phase5wood"><h6>Wood Cuts</h6></a>
+        </div>
+
+        <div class="row section">
+          <div class="six columns">
+            <h7>Audrey:</h7>
+            <a href="images\ass4_phase5\wood_audrey.png"><img src="images\ass4_phase5\wood_audrey.png" class="u-full-width"/></a>
+          </div>
+
+          <div class="six columns">
+            <h7>Winnie:</h7>
+            <a href="images\ass4_phase5\wood_winnie.png"><img src="images\ass4_phase5\wood_winnie.png" class="u-full-width"/></a>
+          </div>
+        </div>
+      </div>
+
+<!-- Phase 5, Cardstock Cuts -->
+      <div class="row section">
+        <div class="twelve columns">
+          <a id="phase5cardstock"><h6>Cardstock Cuts</h6></a>
+        </div>
+
+        <div class="row section">
+          <div class="six columns">
+            <h7>Deanna:</h7>
+            <a href="images\ass4_phase5\cardstock_deanna.png"><img src="images\ass4_phase5\cardstock_deanna.png" class="u-full-width"/></a>
+          </div>
+
+          <div class="six columns">
+            <h7>Gaby:</h7>
+            <a href="images\ass4_phase5\cardstock_gaby.png"><img src="images\ass4_phase5\cardstock_gaby.png" class="u-full-width"/></a>
+          </div>
+        </div>
+      </div>
+
+      </div>
+
+<!-- Divider -->
+    <hr class="dash">
+
+<!-- Phase 6 -->
+
+    <div class="row section" style="padding-bottom:0px;">
+
+      <!-- Phase 6 Header -->
+      <div class="twelve columns">
+        <a id="phase6"><h5>Phase Six: Laser Cutting Documentation</h5></a>
+      </div>
+
+<!-- Phase 6, Presentation -->
+      <div class="row section">
+
+        <div class="twelve columns">
+          <h6>Wednesday, March 2nd @ [5:15PM]</h6>
+          <div class="twelve columns">
+            <p>Initial test of more notches and cardstock test of slits and size.</p>
+            <br>
+          </div>
+        </div>
+
+        <div class="twelve columns">
+          <h6>Wednesday, March 16th @ [5:30PM - 6:45PM]</h6>
+          <div class="twelve columns">
+            <p>Assumed final prints of both wood and cardstock. We needed more work on the notches and goldilocks. The sizes were also off.</p>
+            <br>
+          </div>
+        </div>
+
+        <div class="twelve columns">
+          <h6>Friday, March 18th @ [1:30PM - 3:00PM]</h6>
+          <div class="twelve columns">
+            <p>Final cuts.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+<!-- Divider -->
+    <hr class="dash">
+
+<!-- Phase 7 -->
+
+    <div class="row section" style="padding-bottom:0px;">
+
+      <!-- Phase 7 Header -->
+      <div class="twelve columns">
+        <a id="phase7"><h5>Phase Seven: Presentation and Schema Review</h5></a>
+      </div>
+
+<!-- Phase 7, Presentation -->
+      <div class="row section">
+        <div class="twelve columns">
+          <p>Everything going smoothly.</p>
+        </div>
+      </div>
+    </div>
+
+<!-- Divider -->
+    <hr class="dash">
+
+<!-- Phase 8 -->
+
+    <div class="row section">
+
+      <!-- Phase 8 Header -->
+      <div class="twelve columns">
+        <a id="phase8"><h5>Phase Eight: Final Schema</h5></a>
+      </div>
+
+<!-- Phase 8, Schema -->
+      <div class="row section">
+        <div class="twelve columns">
+          <a href="images\ass4_phase8\schema1.png"><img src="images\ass4_phase8\schema1.png" class="u-full-width"/></a>
+        </div>
+      </div>
+      <div class="row section">
+        <div class="twelve columns">
+          <a href="images\ass4_phase8\schema2.png"><img src="images\ass4_phase8\schema2.png" class="u-full-width"/></a>
+        </div>
+      </div>
+
+    </div>
+
+<!-- Divider -->
+    <hr class="dash">
+
+<!-- Phase 9 -->
+
+    <div class="row section">
+
+      <!-- Phase 9 Header -->
+      <div class="twelve columns">
+        <a id="phase9"><h5>Phase Nine: Final Presentation</h5></a>
+      </div>
+
+<!-- Phase 9, Schema -->
+      <div class="row section" style="pointer-events:auto;">
+        <div class="twelve columns">
+          <h7><a href="a4final.html">Final Project Page</a></h7>
+        </div>
+      </div>
+    </div>
+
+<!-- Body Container -->
+</div>
+
+<!-- End of MAIN container -->
+    <hr class="dash"><hr class="dash">
+  </div>
+
+  <!-- footer  -->
+  <div class="footer">
+    <p style="padding-top:10px; padding-bottom:10px;">Copyright © Winnie Liang - Website Using Skeleton, Designed by <a href="https://w1126l.github.io/">Winnie Liang</a></p>
+  </div>
+
+<!-- ///////START of Overlay and pops for videos ///////////////////////////////////////////////////////////////// -->
+
+  <div class="overlay-bg"></div>
+
+  <div class="overlay-content popup1">
+    <!-- sketch content here -->
+    <button class="close-btn">X</button>
+  </div>
+
+  <div class="overlay-content popup2">
+    <!-- sketch content here -->
+    <button class="close-btn">X</button>
+  </div>
+
+<!-- End of Page -->
+</body>
+</html>
